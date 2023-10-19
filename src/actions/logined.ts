@@ -1,7 +1,6 @@
 import {io as global}  from '../socket/index.js'
 const user = require('../store/user.js')
 const stage = require('../store/stage.js')
-console.log('user-<',user,stage)
 export default (data:any, socket:any) => {
     let userInfo = user.get(socket.id);
     //add user to stage

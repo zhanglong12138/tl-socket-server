@@ -7,11 +7,16 @@ export const stage = {
     width,
     height
 }
-export const deviationOffset = 1.5
+//move deviationOffset range
+export const deviationOffset = 1.5 
+
+//Receive message range
+export const receiveRange = [9,9]
 export default {
     host,
     port,
     salt,
     stage,
-    deviationOffset
+    deviationOffset,
+    receiveRange
 }
