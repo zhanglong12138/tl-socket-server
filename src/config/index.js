@@ -7,3 +7,11 @@ export const stage = {
     width,
     height
 }
+export const deviationOffset = 1.5
+export default {
+    host,
+    port,
+    salt,
+    stage,
+    deviationOffset
+}

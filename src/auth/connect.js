@@ -1,7 +1,7 @@
 const registerEvent = require('./register.js');
 const loginEvent = require('./login.js');
 const logoutEvent = require('./logout.js');
-const handleActions = require('./handleActions.js')
+const handleActions = require('../actions/handleActions.ts')
 
 exports.connectEvent = (socket,{
     stage,

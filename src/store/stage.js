@@ -3,7 +3,7 @@
 // require = require('esm')(module /*, options*/);
 // const {BlockType,Block} = require('../model/Block');
 // const {Monster, NPC} = require('../model/Person');
-const {stage :stageParam} = require('../../config');
+const {stage :stageParam} = require('../config');
 const {width,height} = stageParam;
 
 const initStage = () => {
