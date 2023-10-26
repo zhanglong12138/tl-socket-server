@@ -1,6 +1,6 @@
-import logined from './logined.ts';
-import move from './move.ts';
-import say from './say.ts';
+import logined from './logined';
+import move from './move';
+import say from './say';
 
 export default {
     logined,

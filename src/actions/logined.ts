@@ -1,5 +1,5 @@
 import {io as global}  from '../socket/index.js'
-import {birthPosition} from '../config/index.ts'
+import {birthPosition} from '../config/index'
 const user = require('../store/user.js')
 const stage = require('../store/stage.js')
 export default (data:any, socket:any) => {

@@ -1,4 +1,4 @@
-import eventMap from './eventMap.ts'
+import eventMap from './eventMap'
 const user = require('../store/user.js')
 const CONFIG = {
     deviationOffset:1.5

@@ -7,7 +7,7 @@ export const stage = {
     width,
     height
 }
-export const birthPosition = [stage.width/2,stage.height/2]
+export const birthPosition = [width/2,height/2]
 //move deviationOffset range
 export const deviationOffset = 1.5 
 
