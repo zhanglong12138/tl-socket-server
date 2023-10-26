@@ -11,7 +11,9 @@ export default (data:any, socket:any) => {
     socket.emit('message', 'logined');
     global.emit('event', {
         type:'logined',
-        userInfo
+        userInfo,
+        stage,
+        users:user.getAllUser(),
     });
     user.set(socket.id,userInfo);
 }

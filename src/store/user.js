@@ -3,7 +3,11 @@ const user = new Map();
 module.exports = user;
 
 module.exports.getAllUser = () => {
-    return Array.from(user).map(e=>{
+    return Array.from(user).filter(e=>{
         return e[1]
     }) 
+}
+
+module.exports.getUserInfoByName = (name)=>{
+    
 }
