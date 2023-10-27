@@ -2,6 +2,7 @@ import CONFIG from '../config/index.ts';
 const user = require('../store/user.js')
 export default (data:any, socket:any) => {
     let userInfo = user.get(socket.id);
+    console.log('userInof',userInfo,user)
     let {direction,offset} = data;
     {
         //check if it is reasonable
