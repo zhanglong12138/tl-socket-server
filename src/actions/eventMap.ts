@@ -1,9 +1,9 @@
 import logined from './logined';
 import move from './move';
-import say from './say';
+import chat from './chat';
 
 export default {
     logined,
     move,
-    say,
+    chat,
 }

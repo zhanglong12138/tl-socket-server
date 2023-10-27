@@ -1,25 +1,26 @@
 import CONFIG from '../config/index';
-import { io } from '../../src/socket/index.js'
+import { io } from '../socket/index.js'
 const user = require('../store/user.js')
 export default (data:any, socket:any) => {
+    console.log(data)
     //get users around and send to client
     let userInfo = user.get(socket.id);
-    let {message,to=false} = data;
-    console.log(userInfo.name, ':', message)
+    let {msg,to=false} = data;
+    console.log(userInfo.name, ':', msg,userInfo?.isForbiddenMessage)
     //is user forbidden
     if(userInfo?.isForbiddenMessage){
         return
     }
 
-    if(to){
-
-    }else{
+    if(to=='all'){
         io.emit('event', {
-            type:'message',
-            message,
+            type:'say',
+            msg,
             from:userInfo,
             to:'all'
         });
+    }else{
+        
     }
     
 
